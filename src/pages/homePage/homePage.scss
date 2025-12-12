@@ -1,0 +1,81 @@
+@import '../../colors.scss';
+
+.homePage{
+    padding-top: 2rem;
+    .videoSection{
+        
+        position: relative;
+        .videoArea{
+            background: cyan;
+            width: 100%;
+            min-height: 15rem;
+            opacity: 0.5;
+        }
+        .mainIntro{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: left;
+            width: 100%;
+            height: 100%;
+            color: $secondaryColor;
+
+            .title{
+                font-size: 1.8rem;
+                margin-bottom: 0.5rem;
+                font-weight: 600;
+            }
+
+            .subtitle{
+                font-size: 1.4rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .learnMore{
+                font-size: 1.2rem;
+                cursor: pointer;
+                &:hover{
+                    color: $accentColor;
+                    text-decoration: underline;
+                }
+            }
+
+        }
+    }
+
+    .faq{
+        padding: 2rem;
+
+        .title{
+            color: $secondaryColor;
+            font-weight: 600;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .questionSection{
+            justify-content: center;
+            .questionItem{
+                margin-bottom: 1rem;
+                .MuiPaper-root , .MuiAccordionSummary-expandIconWrapper{
+                    background-color: $secondBackground;
+                    color: $secondaryColor;
+                }
+                .MuiAccordionSummary-content .MuiTypography-root{
+                    // font-weight: 600;
+                    font-size: 1.4rem;
+                }
+                .MuiCollapse-root{
+                    .MuiAccordionDetails-root{
+                        text-align: left;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

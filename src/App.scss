@@ -1,5 +1,20 @@
+@import './colors.scss'; 
+
+
 .App {
   text-align: center;
+  padding: 1rem 0;
+  background: $primaryColor;
+  .MuiTextField-root{
+    color: $secondaryColor;
+    label, .MuiInputBase-root{
+      color: $secondaryColor;
+    }
+    fieldset, .MuiInputBase-root:hover > fieldset{
+      border-color:$secondaryColor;
+
+    }
+  }
 }
 
 .App-logo {
