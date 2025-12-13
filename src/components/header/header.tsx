@@ -4,6 +4,9 @@ import React, { useEffect, useState } from 'react'
 import { Drawer } from "@mui/material";
 import { staticPages } from '../../static/static.page';
 import { useNavigate } from 'react-router-dom';
+import logo from '../../logo.jpeg'
+import brandName from '../../name.jpeg'
+
 
 
 
@@ -39,13 +42,13 @@ const AppHeader = () => {
         setOpen(newOpen);
     };
 
-    const controlsList = () => (
-    <div className="controls">
-        <div className="user">
+    // const controlsList = () => (
+    // <div className="controls">
+    //     <div className="user">
             
-        </div>
-    </div>
-    )
+    //     </div>
+    // </div>
+    // )
 
     const menuList = () => (<div className="menu">
         {staticPages.map((page,index) => 
@@ -60,8 +63,10 @@ const AppHeader = () => {
     </div>)
 
     return <div className='appHeader'>
-       <div className="logoArea">
-            {/* <img  onClick={() => navigate("/")}/> */}        
+       <div className="logoArea" onClick={() => navigate("/")}>
+            {/* <img  onClick={() => navigate("/")}/> */}   
+            <img src={logo} /> 
+            <img src={brandName}/>    
         </div>
         {windowWidth < 850 ? <> 
        
@@ -72,11 +77,12 @@ const AppHeader = () => {
             </span>
             <Drawer open={open} anchor="top" onClose={toggleDrawer(false)} className={`drawerComponent`}>
                 {menuList()}    
-                {controlsList()}
+                {/* {controlsList()} */}
             </Drawer></>
             : <>
             {menuList()}
-            {controlsList()}
+            {/* {controlsList()} */}
+            
        </>} 
 
     </div>

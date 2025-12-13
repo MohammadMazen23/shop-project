@@ -72,7 +72,7 @@ const ContactUsPage = () => {
                         </Row>
                         <Row>
                             <Col md='12'>
-                                <Button variant="contained" type='submit'>Send</Button>
+                                <Button variant="contained" className="submit" type='submit'>Send</Button>
                             </Col>
                         </Row>
 

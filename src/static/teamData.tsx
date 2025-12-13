@@ -1,7 +1,7 @@
 export const teamData = [
     {
         name: "Douaa Ghouini",
-        role: "Ceo",
+        role: "",
         image: ""
     },
     {

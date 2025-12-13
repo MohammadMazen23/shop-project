@@ -16,6 +16,14 @@
         height: 5rem;
         // margin-right: 2rem;
         margin-bottom: 1rem;
+        background: $secondaryColor;
+        border-radius: 50%;
+        font-size: 4rem;
+        color: $accentColor;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        overflow: hidden;
         img{
             width: 100%;
             height: 100%;
@@ -24,7 +32,6 @@
     }
     .data{
         text-align: left;
-        color: $secondaryColor;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -32,9 +39,12 @@
             font-size: 1.6rem;
             font-weight: 600;
             // margin-bottom: 0.5rem;
+            color: $secondaryColor;
+
         }
-        .data{
+        .role{
             font-size: 1.4rem;
+            color: $accentColor;
         }
     }
 }

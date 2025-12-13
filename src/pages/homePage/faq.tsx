@@ -8,7 +8,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
 
 const FAQ = () => {
@@ -28,7 +28,7 @@ const FAQ = () => {
             <Row className='questionSection'>
                 {faq.map((item,index) => <Col md="12" lg="6" className='questionItem'> <Accordion id={index.toString()}>
                     <AccordionSummary
-                        expandIcon={<FontAwesomeIcon icon={faChevronUp} />}
+                        expandIcon={<FontAwesomeIcon icon={faChevronDown} />}
                         aria-controls="panel1-content"
                         id="panel1-header"
                         >

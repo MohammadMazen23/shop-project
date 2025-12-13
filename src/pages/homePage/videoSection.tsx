@@ -9,6 +9,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import myVideo from "../../videos/vid1.mp4"
 
 
 const VideoSection = () => {
@@ -25,7 +26,15 @@ const VideoSection = () => {
 
     return <div className='videoSection'>
         <div className='videoArea'>
-
+            <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="bg-video"
+            >
+            <source src={myVideo} type="video/mp4" />
+            </video>
         </div>
         <div className='mainIntro'>
             <div className='title'>

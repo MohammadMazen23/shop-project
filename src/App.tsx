@@ -16,7 +16,7 @@ import AppLogo from './components/header/logo';
 function App() {
   return (
     <div className="App">
-      <AppLogo />
+      {/* <AppLogo /> */}
       <AppHeader />
         <Routes>
           <Route path="/" element={<HomePage />} />

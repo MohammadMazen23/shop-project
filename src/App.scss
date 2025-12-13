@@ -5,14 +5,33 @@
   text-align: center;
   padding: 1rem 0;
   background: $primaryColor;
+  // background: linear-gradient(
+  // to bottom,
+  // $green6 0%,
+  // $green5 20%,
+  // $green4 40%,
+  // $green3 60%,
+  // $green2 80%,
+  // $green1 100%
+  // );
+
   .MuiTextField-root{
     color: $secondaryColor;
     label, .MuiInputBase-root{
       color: $secondaryColor;
     }
     fieldset, .MuiInputBase-root:hover > fieldset{
-      border-color:$secondaryColor;
+      border-color:$secondaryColor !important;
 
+    }
+  }
+
+  .MuiButtonBase-root.submit{
+    background: $accentColor;
+    color: $primaryColor;
+    font-weight: 600;
+    &:hover{
+      background: $accentHover;
     }
   }
 }

@@ -1,0 +1,117 @@
+@import "../../colors.scss";
+
+.popUpContainer{
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+//    max-height: 100vh;
+   overflow: hidden;
+   background: rgb(0,0,0,0.7);
+   top: 0;
+   left:0;
+   z-index: 10;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   .popUpWindow{
+    width: 70%;
+    height: 70%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 3rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .row{
+        height: 100%;
+        align-items: center;
+    }
+    .imageContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .mainImage{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 3rem;
+            img{
+                width: 70%;
+                border-radius: 10px;
+            }
+        }
+        .smallImages{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            img{
+                width: 5rem;
+                margin-right: 1rem;
+                border-radius: 10px;
+                cursor: pointer;
+                &:last-of-type{
+                    margin-right: 0px;
+                }
+                &.activeImage{
+                    outline: 6px solid $accentColor;
+                }
+            }
+        }
+    }
+    .dataContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // padding: 2rem 2rem;
+        height: 100%;
+        text-align: start;
+
+        .title{
+            font-size: 2rem;
+            color: $secondaryColor;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .subtitle{
+            font-size: 1.6rem;
+            color: $accentColor;
+            margin-bottom: 2rem;
+        }
+
+        .desc{
+            font-size: 1.2rem;
+            color: $secondaryColor;
+        }
+    }
+   }
+}
+
+@media (max-width: 1199px) {
+    .popUpContainer{
+   .popUpWindow{
+    width: 90%;
+    height: 90%;
+    .row{
+        height: auto;
+    }
+    .imageContainer{
+        .mainImage{
+            width: 100%;
+            img{
+                width: 40%;
+            }
+        }
+
+    }
+    .dataContainer{
+
+        height: auto;
+        text-align: center;
+        margin-top: 2rem;
+
+        
+    }
+   }
+}
+    
+}

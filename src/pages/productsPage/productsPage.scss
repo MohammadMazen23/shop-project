@@ -1,0 +1,85 @@
+@import "../../colors.scss";
+
+.productsPage{
+    // padding: 2rem 4rem;
+    .item:nth-child(even){
+            flex-direction: row-reverse;
+            background: $secondaryColor;
+        .itemData{
+            .itemName{
+                color: $accentColor;
+            }
+            .itemDesc{
+                color: $primaryColor;
+            }
+            .more{
+                color: $primaryColor;
+                &:hover{
+                    color: $accentColor;
+                }
+            }
+        }
+        }
+    .item{
+        position: relative;
+        padding: 2rem 0;
+        align-items: center;
+        padding: 8rem 4rem;
+        overflow: hidden;
+        width: calc(100% + 0.7rem);
+
+        // &::after{
+        //     content: "";
+        //     position: absolute;
+        //     width: 96%;
+        //     left: 2%;
+        //     height: 1px;
+        //     bottom: 0;
+        //     background: $secondaryColor;
+        // }
+
+        // &:last-of-type::after{
+        //     height: 0px;
+        // }
+
+        
+
+        .itemData{
+            text-align: left;
+            z-index:1;
+            .itemName{
+                color: $secondaryColor;
+                font-size: 2rem;
+                font-weight: 600;
+                margin-bottom: 0.7rem;
+            }
+            .itemDesc{
+                color: $accentColor;
+                margin-bottom: 0.5rem;
+                font-size: 1.2rem;
+            }
+            .more{
+                font-size: 1.2rem;
+                color: $accentColor;
+                cursor: pointer;
+                &:hover{
+                    color: $secondaryColor;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .image{
+            position: relative;
+            img{
+                position: absolute;
+                max-width: 90%;
+                /* height: 35rem; */
+                bottom: -13rem;
+                left: 2rem;
+                opacity: 0.2;
+            }
+        }
+    }
+}
+
+// 991
