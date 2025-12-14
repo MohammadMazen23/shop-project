@@ -1,21 +1,13 @@
-import { useDispatch } from 'react-redux'
 import './homePage.scss'
-import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import {Col, Row } from 'react-bootstrap'
-import { faq } from '../../static/faq'
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faChevronUp, faStar, faUser } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar, faUser } from '@fortawesome/free-solid-svg-icons'
 import { rev } from '../../static/rev'
 
 
 const Reviews = () => {
 
-    const dispatch = useDispatch()
-    const navigate = useNavigate()
 
 
     useEffect(()=>{
@@ -30,7 +22,7 @@ const Reviews = () => {
                 {rev.map((item,index) => <Col sm="12" md="6" lg="4" xl="3" className='revItem' id={index.toString()}>
                     <div className='revItemContainer'>
                         <div className='image'>
-                            {item.photo ? <img src={item.photo} /> : <FontAwesomeIcon icon={faUser}/>}                        
+                            {item.photo ? <img src={item.photo} alt=""/> : <FontAwesomeIcon icon={faUser}/>}                        
                         </div>
                         <div className='revData'>
                             <div className='top'>

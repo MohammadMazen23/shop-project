@@ -1,28 +1,14 @@
-import { useDispatch } from 'react-redux'
 import './contactUsPage.scss'
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { Form, Formik, FormikHelpers, FormikValues } from 'formik'
 import { Button, TextField } from '@mui/material'
-import { LoadScript, GoogleMap, Marker } from '@react-google-maps/api'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationCrosshairs, faMessage, faPhone } from '@fortawesome/free-solid-svg-icons'
 import Map from '../../map.jpg';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const ContactUsPage = () => {
-
-    const dispatch = useDispatch()
-
-    const containerStyle = {
-        width: "100%",
-        height: "420px"
-    };
-
-    const center = {
-        lat: 40.7128,
-        lng: -74.0060
-    };
 
     const [message,setMessage] = useState({
         firstName:'',
@@ -77,36 +63,17 @@ const ContactUsPage = () => {
                             </Col>
                         </Row>
 
-
-                        
-
-
-                        {/* <label htmlFor="lastName">Last Name</label>
-                        <Field id="lastName" name="lastName" placeholder="Doe" />
-
-                        <label htmlFor="email">Email</label>
-                        <Field
-                        id="email"
-                        name="email"
-                        placeholder="jane@acme.com"
-                        type="email"
-                        /> */}
-
-                        {/* <button type="submit">Submit</button> */}
                     </Form>
                 </Formik>
             </Col>
             <Col sm="12" lg="6" className='map'>
                 <Row>
                     <Col xl='12'>
-                        {/* <LoadScript googleMapsApiKey="YOUR_API_KEY">
-                            <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={12}>
-                                <Marker position={center} />
-                            </GoogleMap>
-                        </LoadScript> */}
+                        
                         <img 
                             className='mapImage' 
                             src={Map} 
+                            alt=""
                             onClick={() => window.open("https://maps.app.goo.gl/Yq65FuALhbvkgrCn9", "_blank")}
                         />
                     </Col>

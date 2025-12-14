@@ -1,4 +1,3 @@
-import vid from "../vid.mp4";
 import a11 from "../images/11.jpeg"
 import a12 from "../images/12.jpeg"
 import a21 from "../images/21.jpeg"

@@ -1,4 +1,3 @@
-import { useDispatch } from 'react-redux'
 import './productsPage.scss'
 import React, { useEffect, useState } from 'react'
 import { productsList } from '../../static/products'
@@ -7,7 +6,6 @@ import PopUp from '../../components/popup/popup'
 
 const ProductsPage = () => {
 
-    const dispatch = useDispatch()
     const [open,setOpen] = useState(false)
     const [data, setData] = useState({title:"",
         subTitle:"",
@@ -49,7 +47,7 @@ const ProductsPage = () => {
                 </div>
             </Col>
             <Col lg="4" md="12" className='image'>
-                <img src={item.coverImage} />
+                <img src={item.coverImage} alt=""/>
             </Col>
        </Row>)}
     </div>

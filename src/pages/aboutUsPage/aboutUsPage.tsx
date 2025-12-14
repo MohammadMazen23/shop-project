@@ -1,6 +1,5 @@
-import { useDispatch } from 'react-redux'
 import './aboutUsPage.scss'
-import React, { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { teamData } from '../../static/teamData'
 import Card from '../../components/card/card'
@@ -8,7 +7,6 @@ import team from "../../office.png"
 
 const AboutUsPage = () => {
 
-    const dispatch = useDispatch()
 
     useEffect(()=>{
         sessionStorage.setItem("page","about");
@@ -41,7 +39,7 @@ const AboutUsPage = () => {
                 </div>
             </Col>
             <Col lg='4' md="12" className='image'>
-                <img src={team} />
+                <img src={team} alt=""/>
             </Col>
        </Row>
        <div className='cardsSection'>
