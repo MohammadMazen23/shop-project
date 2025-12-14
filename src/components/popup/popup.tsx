@@ -51,9 +51,9 @@ const PopUp = ({ open, close , data }: IProps) => {
                 <div className='title'>
                     {data.title}
                 </div>
-                <div className='subtitle'>
+                {/* <div className='subtitle'>
                     {data.subTitle}
-                </div>
+                </div> */}
                 <div className='desc'>
                     {data.description}
                 </div>

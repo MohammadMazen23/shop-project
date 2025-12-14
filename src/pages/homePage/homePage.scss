@@ -56,6 +56,16 @@
 
     .faq{
         padding: 2rem;
+        position: relative;
+        &::after{
+            position: absolute;
+            left: 5%;
+            bottom: 0;
+            width: 90%;
+            content: "";
+            height: 1px;
+            background: $secondaryColor;
+        }
 
         .title{
             color: $secondaryColor;
@@ -83,5 +93,140 @@
                 }
             }
         }
+    }
+
+    .promo{
+        padding: 4rem;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .row{
+            display: flex;
+            align-items: center;
+            // background: $secondaryColor;
+            // width: 60%;
+            // border-radius: 10rem;
+        }
+        .image{
+            // width: 100%;
+            padding: 0;
+            // display: flex;
+            // justify-content: flex-start;
+            img{
+                // width: 80%;
+                border-radius: 50%;
+                height: 20rem;
+            }
+        }
+        .info{
+            padding-left: 2rem;
+            text-align: left;
+            .title{
+                font-size: 1.6rem;
+                color: $accentColor;
+                margin-bottom: 1rem;
+            }
+            .content{
+                font-size: 1.2rem;
+                color: $secondaryColor;
+            }
+        }
+        &::after{
+            position: absolute;
+            left: 5%;
+            bottom: 0;
+            width: 90%;
+            content: "";
+            height: 1px;
+            background: $secondaryColor;
+        }
+    }
+
+    .reviews{
+        padding: 2rem;
+        
+        .title{
+            color: $secondaryColor;
+            font-weight: 600;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+        .reviewSection{
+            justify-content: center;
+            .revItem{
+                margin-bottom: 1rem;
+                .revItemContainer{
+                    border: 1px solid $secondaryColor;
+                    border-radius: 10px;
+                    height: 100%;
+                    // width: 90%;
+                    display: flex;
+                    padding: 1rem;
+                    // align-items: center;
+                    .image{
+                        width: 5rem;
+                        height: 5rem;
+                        // margin-right: 2rem;
+                        margin-right: 1.5rem;
+                        background: $secondaryColor;
+                        border-radius: 50%;
+                        font-size: 4rem;
+                        color: $accentColor;
+                        display: flex;
+                        align-items: flex-end;
+                        justify-content: center;
+                        overflow: hidden;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                    }
+                    .revData{
+                        width: 75%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+                        .top{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 0.5rem;
+                            .name{
+                            font-size: 1.4rem;
+                            color: $accentColor;
+                            font-weight: 600;
+                            }
+                            .stars{
+                                color: $secondaryColor;
+                                .colorStar{
+                                    color: $accentColor;
+                                }
+                            }
+                        }
+                        
+                        .review{
+                            color: $secondaryColor;
+                            // margin-bottom: 0.5rem;
+                        }
+                    }
+
+                }
+                
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 991px) {
+.homePage .promo{
+       
+        .info{
+            text-align: center;
+            
+        }
+        
     }
 }

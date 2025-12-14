@@ -13,7 +13,8 @@ import Typography from '@mui/material/Typography';import { FontAwesomeIcon } fro
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import FAQ from './faq'
 import VideoSection from './videoSection'
-
+import homeImg from '../../home.png'
+import Reviews from './rev'
 
 const HomePage = () => {
 
@@ -29,7 +30,23 @@ const HomePage = () => {
 
     return <div className='homePage'>
        <VideoSection />
+       <div className='promo'>
+         <Row>
+            <Col lg="4" md="12" className='image'>
+               <img src={homeImg} />
+            </Col>
+            <Col lg="8" md="12" className='info'>
+               <div className='title'>
+                  Unparallelled foundation matching technology
+               </div>
+               <div className='content'>
+                  Our cutting-edge skin shade detection technology identifies each customer’s individual skin tone. Within seconds, customer can discover the perfect product fit from your foundation collection and try it on virtually.
+               </div>
+            </Col>
+         </Row>         
+       </div>
        <FAQ />
+       <Reviews />
     </div>
 }
 

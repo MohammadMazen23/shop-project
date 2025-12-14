@@ -8,6 +8,7 @@ import { LoadScript, GoogleMap, Marker } from '@react-google-maps/api'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationCrosshairs, faMessage, faPhone } from '@fortawesome/free-solid-svg-icons'
 import Map from '../../map.jpg';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const ContactUsPage = () => {
 
@@ -114,11 +115,14 @@ const ContactUsPage = () => {
                             <Col xl='12'>
                                 <FontAwesomeIcon icon={faLocationCrosshairs} /> Hamidiye, 34408 Kağıthane/İstanbul
                             </Col>
-                            <Col sm='12' lg="6">
+                            <Col sm='12' lg="4">
                                 <FontAwesomeIcon icon={faPhone} /> <span onClick={() => window.location.href = "tel:+90542342214"}>+90542342214</span>
                             </Col>
-                            <Col sm='12' lg="6">
-                                <FontAwesomeIcon icon={faMessage} /> <span onClick={() => window.location.href = "mailto:support@neuroear.com"}>support@neuroear.com</span>
+                            <Col sm='12' lg="4">
+                                <FontAwesomeIcon icon={faMessage} /> <span onClick={() => window.location.href = "mailto:support@verdera.com"}>support@verdera.com</span>
+                            </Col>
+                            <Col sm='12' lg="4">
+                                <FontAwesomeIcon icon={faInstagram} /> <span onClick={() => window.open("https://www.instagram.com/verdera.labs?igsh=MnllZzh1Nmtydzc2&utm_source=qr", "_blank")}>verdera.labs </span>
                             </Col>
                         </Row>
                     

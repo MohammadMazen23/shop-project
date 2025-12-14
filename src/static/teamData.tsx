@@ -7,33 +7,34 @@ import ahmad from "../images/team/ahmad.jpeg"
 
 export const teamData = [
     {
+        name: "Ammar Khatib",
+        role: "CEO",
+        image: ammar,
+    },
+    {
         name: "Douaa Ghouini",
-        role: "",
+        role: "Reasercher and Producer",
         image: douaa
     },
     {
         name: "Leen Ramdoun",
-        role: "",
+        role: "Reasercher and Producer",
         image: leen,
     },
     {
         name: "Nibal Abu Salem",
-        role: "",
+        role: "Finance Manager",
         image: nibal,
     },
-    {
-        name: "Ammar Khatib",
-        role: "",
-        image: ammar,
-    },
+    
     {
         name: "Kubra Kasimoglu",
-        role: "",
+        role: "Sales Manager",
         image: kubra,
     },
     {
         name: "Ahmad Awaies",
-        role: "",
+        role: "Marketing Manager",
         image: ahmad,
     }
 ]

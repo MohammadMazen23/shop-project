@@ -74,9 +74,17 @@
                 position: absolute;
                 max-width: 90%;
                 /* height: 35rem; */
-                bottom: -13rem;
+                bottom: -15rem;
                 left: 2rem;
                 opacity: 0.2;
+            }
+        }
+
+        &:last-of-type{
+            .image{
+                img{
+                    bottom: -12rem;
+                }
             }
         }
     }
