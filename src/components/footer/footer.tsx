@@ -14,7 +14,7 @@ const AppFooter = () => {
     },[])
 
     return <div className='footer'>
-       <FontAwesomeIcon icon={faCopyright} /> 2025 NeuroEar. All rights reserved.
+       <FontAwesomeIcon icon={faCopyright} /> 2025 Verdera. All rights reserved.
     </div>
 }
 
