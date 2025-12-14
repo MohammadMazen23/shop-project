@@ -37,10 +37,11 @@ const HomePage = () => {
             </Col>
             <Col lg="8" md="12" className='info'>
                <div className='title'>
-                  Unparallelled foundation matching technology
+                  A Complete Eczema Support Kit
+
                </div>
                <div className='content'>
-                  Our cutting-edge skin shade detection technology identifies each customer’s individual skin tone. Within seconds, customer can discover the perfect product fit from your foundation collection and try it on virtually.
+                  Verdera is built as a simple 4-step routine that supports eczema-prone skin from daily care to flare moments. Our Topical Microbiome Spray delivers fast, lightweight hydration and barrier-support lipids to reduce dryness and sensitivity. The Anti-Itch Herbal Scalp Toner helps calm itch, redness, and flaking for reactive scalps and seborrheic dermatitis. For hot, localized patches, the SOS Probiotic Balm creates a protective, bandage-like layer to lock in moisture and restore comfort. Finally, the 24-Hour Probiotic Patch offers targeted, controlled support on specific areas to help soothe irritation and reinforce the barrier between treatments.
                </div>
             </Col>
          </Row>         

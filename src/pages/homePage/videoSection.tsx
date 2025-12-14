@@ -38,11 +38,10 @@ const VideoSection = () => {
         </div>
         <div className='mainIntro'>
             <div className='title'>
-                All New Technology!
+                All-New Microbiome Care!
             </div>
             <div className='subtitle'>
-                A non-invasive brain–computer interface (BCI) device designed to help patients communicate using silent-speech decoding
-            </div>
+                A gentle, microbiome-supportive eczema kit designed to calm itch, support barrier repair, and help manage flare-ups for sensitive skin and scalp.            </div>
             <div className='learnMore' onClick={() => navigate('products')}>
                 Learn More {'>'}
             </div>

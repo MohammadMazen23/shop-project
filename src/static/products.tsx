@@ -57,9 +57,9 @@ export const productsList:IProductsList[] = [
         images:[a41,a42,a43]
     },
     {
-        title:"Anti Itch Herbal Scalp Toner",
-        subTitle:"Anti Itch Herbal Scalp Toner Anti Itch Herbal Scalp Toner Anti Itch Herbal Scalp Toner Anti Itch Herbal Scalp Toner",
-        description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+        title:"Verdera Kit",
+        subTitle:"The Verdera Microbiome Eczema Kit is a complete 4-step routine for eczema-prone skin and scalp—designed to calm itch fast, reduce flare discomfort, and strengthen the barrier long-term using microbiome-supportive, gentle formulations.",
+        description:"The Verdera Microbiome Eczema Kit is a targeted care system created specifically for people living with eczema and seborrheic dermatitis, not adapted from general skincare. Rather than focusing only on short-term symptom relief, it supports the skin on three levels: soothing flare-ups, repairing the skin barrier, and helping rebalance the microbiome for more stable, long-term comfort. The kit includes a lightweight topical microbiome spray for fast hydration and barrier support, an anti-itch herbal scalp toner to calm redness, flakes, and irritation, an SOS probiotic balm for hot, itchy patches that helps protect and support healing between treatments, and a probiotic patch that provides localized, long-wear support to reinforce the barrier. Together, Verdera offers a simple, gentle routine suitable for regular use while remaining effective for flare management and long-term skin resilience.",
         coverImage:a5cover,
         images:[a51,a52,a53]
     }
